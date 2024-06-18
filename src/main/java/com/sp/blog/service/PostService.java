@@ -1,6 +1,7 @@
 package com.sp.blog.service;
 
 import com.sp.blog.payload.PostDto;
+import com.sp.blog.payload.PostResponse;
 
 import java.util.List;
 
@@ -8,7 +9,7 @@ public interface PostService {
 
     PostDto createPost(PostDto postDto);
 
-    List<PostDto> getAllPosts();
+    PostResponse getAllPosts(int pageNo, int pageSize);
 
     PostDto getPostById(long id);
 
