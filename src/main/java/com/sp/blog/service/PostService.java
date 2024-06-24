@@ -13,6 +13,8 @@ public interface PostService {
 
     PostDto getPostById(long id);
 
+    List<PostDto> getPostsByCategory(long categoryId);
+
     PostDto updatePost(PostDto postDto, long id);
 
     void deletePostById(long id);
